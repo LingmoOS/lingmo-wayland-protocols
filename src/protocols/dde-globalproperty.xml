@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<protocol name="dde_globalproperty">
+  <copyright><![CDATA[
+    Copyright (C) 2022 UnionTech Software Technology Co., Ltd.
+
+    Permission to use, copy, modify, distribute, and sell this
+    software and its documentation for any purpose is hereby granted
+    without fee, provided that the above copyright notice appear in
+    all copies and that both that copyright notice and this permission
+    notice appear in supporting documentation.
+
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+    EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+    MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+    NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY
+    CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF
+    CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+    WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+  ]]></copyright>
+
+  <interface name="dde_globalproperty" version="1">
+    <description summary="set global window properties">
+      A global interface used by clients to send window decoration and
+      property metadata to the compositor.
+    </description>
+
+    <request name="destroy" type="destructor">
+      <description summary="unbind the globalproperty object">
+        Destroy the client-side binding to this global object.
+      </description>
+    </request>
+
+    <request name="set_property">
+      <description summary="set a property on a surface">
+        Submit a JSON payload associated with the given module/function
+        pair for the target surface.
+      </description>
+      <arg name="module" type="string"/>
+      <arg name="function" type="string"/>
+      <arg name="surface" type="object" interface="wl_surface"/>
+      <arg name="type" type="int"/>
+      <arg name="data" type="string"/>
+    </request>
+
+    <request name="get_property">
+      <description summary="query a property payload">
+        Reserved for querying property data from the compositor.
+      </description>
+      <arg name="data" type="string"/>
+    </request>
+  </interface>
+</protocol>
