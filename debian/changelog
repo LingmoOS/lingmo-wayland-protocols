@@ -1,3 +1,9 @@
+deepin-wayland-protocols (1.20.0.0.lingmo.1) unstable; urgency=medium
+
+  * Lingmo namespace migration.
+
+ -- rewine <luhongxu@deepin.org>  Sun, 12 Jul 2026 23:11:19 +0800
+
 deepin-wayland-protocols (1.10.0.31) unstable; urgency=medium
 
   * fix: wrong protocol version.

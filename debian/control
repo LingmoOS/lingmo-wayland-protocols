@@ -1,4 +1,4 @@
-Source: deepin-wayland-protocols
+Source: lingmo-wayland-protocols
 Section: libdevel
 Priority: optional
 Maintainer: Debian Qt/Deepin Maintainers <luochaojiang@uniontech.com>
@@ -11,11 +11,11 @@ Build-Depends: cmake (>= 3.5~),
                qt5-qmake,
 Standards-Version: 4.6.0
 Rules-Requires-Root: no
-Homepage: https://gerrit.uniontech.com/admin/repos/snipe/deepin-wayland-protocols
-Vcs-Browser: https://gerrit.uniontech.com/admin/repos/snipe/deepin-wayland-protocols
-Vcs-Git: https://gerrit.uniontech.com/admin/repos/snipe/deepin-wayland-protocols
+Homepage: https://gerrit.uniontech.com/admin/repos/snipe/lingmo-wayland-protocols
+Vcs-Browser: https://gerrit.uniontech.com/admin/repos/snipe/lingmo-wayland-protocols
+Vcs-Git: https://gerrit.uniontech.com/admin/repos/snipe/lingmo-wayland-protocols
 
-Package: deepin-wayland-protocols
+Package: lingmo-wayland-protocols
 Architecture: any
 Depends: ${misc:Depends},
 Description: Wayland protocols for Deepin
