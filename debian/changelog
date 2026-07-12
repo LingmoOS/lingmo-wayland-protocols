@@ -1,4 +1,4 @@
-deepin-wayland-protocols (1.20.0.0.lingmo.1) unstable; urgency=medium
+lingmo-wayland-protocols (1.20.0.0.lingmo.1) unstable; urgency=medium
 
   * Lingmo namespace migration.
 
